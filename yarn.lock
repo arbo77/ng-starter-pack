@@ -17,11 +17,6 @@ angular@^1.7.8:
   resolved "https://registry.yarnpkg.com/angular/-/angular-1.7.8.tgz#b77ede272ce1b261e3be30c1451a0b346905a3c9"
   integrity sha512-wtef/y4COxM7ZVhddd7JtAAhyYObq9YXKar9tsW7558BImeVYteJiTxCKeJOL45lJ/+7B4wrAC49j8gTFYEthg==
 
-dynamic-file-require@^0.0.9:
-  version "0.0.9"
-  resolved "https://registry.yarnpkg.com/dynamic-file-require/-/dynamic-file-require-0.0.9.tgz#bdf413a5e64c57a559277e91067a01411fd0c850"
-  integrity sha512-HzjgIKECQl086rjnZBK4JwbyXjNbFdNNnxh2BlySzwlLAE1wyTK/gLET2Tr8Eqb/MifVJ/1dNq+EwZtl55kCEQ==
-
 moment@^2.24.0:
   version "2.24.0"
   resolved "https://registry.yarnpkg.com/moment/-/moment-2.24.0.tgz#0d055d53f5052aa653c9f6eb68bb5d12bf5c2b5b"

@@ -3,6 +3,8 @@ import 'angular-sanitize'
 import 'angular-loading-bar'
 import 'angular-loading-bar/build/loading-bar.min.css'
 import moment from 'moment';
+import 'moment/locale/id';
+
 import config from './config';
 
 function cleanUpObject(o) {
@@ -71,6 +73,16 @@ module.filter('fromNow', [function () {
   }
 }])
 
+module.filter('moment', [function () {
+  return function (input, format) {
+    if (input) {
+      return moment(input).format(format)
+    } else {
+      return '-'
+    }
+  }
+}])
+
 module.directive('href', ['$rootScope', function ($rootScope) {
   return {
     restrict: 'A',
@@ -125,9 +137,9 @@ module.run(['$rootScope','client',
       path: window.location.pathname,
       page: config.page
     }
-    
-    moment.locale(config.locale)
+  
     window.moment = moment
+    window.moment.locale(config.locale)
     self.me = {
       get: (callback) => {
       },

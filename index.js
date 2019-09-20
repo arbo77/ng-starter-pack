@@ -6,7 +6,7 @@ module.exports = (config) => {
     let self = $rootScope;
   
     client.config = config
-
+    moment.locale('id')
     self.me.get()
     self.now = moment()
     self.ddm = false;
@@ -19,6 +19,14 @@ module.exports = (config) => {
       self.footer = config.template[config.page.footer]
     }
   
+    function loadFromPage(pathname) {
+      const page = pathname.split('/')[1]
+      if(config.template[page]) {
+        return page
+      }else{
+        return config.page.default
+      }
+    }
     self.$watch('app.path', (pathname) => {
       console.log(pathname)
       if (pathname === '/signout') {
@@ -28,11 +36,10 @@ module.exports = (config) => {
       for (const url in config.page.routes) {
         const found = new URL(url).match(pathname)
         self.app.params = found || {}
-        self.app.page = found ? config.page.routes[url] : config.page.default
+        self.app.page = found ? config.page.routes[url] : loadFromPage(pathname)
         try {
           self.main = config.template[self.app.page]
         } catch (ex) {
-          console.error(ex.message)
           self.main = config.template[self.app.default]
         }
         window.scrollTo(0, 0)
