@@ -1,0 +1,26 @@
+{
+  "name": "ng-pack",
+  "version": "0.1.0",
+  "description": "AngularJS application starter pack",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "angularjs",
+    "starter pack",
+    "javascript",
+    "webapp"
+  ],
+  "author": "@arbo77",
+  "license": "MIT",
+  "dependencies": {
+    "angular": "^1.7.8",
+    "angular-loading-bar": "^0.9.0",
+    "angular-sanitize": "^1.7.8",
+    "dynamic-file-require": "^0.0.9",
+    "moment": "^2.24.0",
+    "url-pattern": "^1.0.3"
+  },
+  "devDependencies": {}
+}
