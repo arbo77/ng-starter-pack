@@ -1,6 +1,6 @@
 {
   "name": "ng-starter-pack",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "AngularJS application starter pack",
   "main": "index.js",
   "scripts": {
@@ -13,6 +13,7 @@
     "webapp"
   ],
   "author": "@arbo77",
+  "homepage": "https://github.com/arbo77/ng-starter-pack",
   "license": "MIT",
   "dependencies": {
     "angular": "^1.7.8",
