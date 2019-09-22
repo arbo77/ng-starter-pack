@@ -2,10 +2,9 @@ import URL from 'url-pattern'
 const m = require('./src/module');
 
 module.exports = (config) => {
-  m.default.controller('main', ['$rootScope', 'client', function ($rootScope, client) {
+  m.default.controller('main', ['$rootScope', '$http', function ($rootScope, $http) {
     let self = $rootScope;
   
-    client.config = config
     moment.locale('id')
     self.me.get()
     self.now = moment()
@@ -28,7 +27,6 @@ module.exports = (config) => {
       }
     }
     self.$watch('app.path', (pathname) => {
-      console.log(pathname)
       if (pathname === '/signout') {
         self.me.signout();
         return;
@@ -53,5 +51,8 @@ module.exports = (config) => {
     })
   }])
 
-  return m
+  return {
+    pack: m,
+    module: m.default,
+  }
 }

@@ -18,6 +18,8 @@
     "angular": "^1.7.8",
     "angular-loading-bar": "^0.9.0",
     "angular-sanitize": "^1.7.8",
+    "dexie": "^2.0.4",
+    "dexie-observable": "^1.0.0-beta.5",
     "moment": "^2.24.0",
     "url-pattern": "^1.0.3"
   }
