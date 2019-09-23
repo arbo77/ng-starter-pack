@@ -2,6 +2,13 @@
 # yarn lockfile v1
 
 
+angular-filter@^0.5.17:
+  version "0.5.17"
+  resolved "https://registry.yarnpkg.com/angular-filter/-/angular-filter-0.5.17.tgz#60c0c7380fd45872cb8f10801cfe07e154062935"
+  integrity sha1-YMDHOA/UWHLLjxCAHP4H4VQGKTU=
+  dependencies:
+    angular "*"
+
 angular-loading-bar@^0.9.0:
   version "0.9.0"
   resolved "https://registry.yarnpkg.com/angular-loading-bar/-/angular-loading-bar-0.9.0.tgz#37ef52c25f102c216e7b3cdfd2fc5a5df9628e45"
@@ -12,7 +19,7 @@ angular-sanitize@^1.7.8:
   resolved "https://registry.yarnpkg.com/angular-sanitize/-/angular-sanitize-1.7.8.tgz#87d59f754bb18d286dfd9d6ce867299c094c6719"
   integrity sha512-sVq51is1cVNiPytH4JIEd7iRW0OBIRQGNETWkz1c/jnLv2sBf9oDxEd8enwDz/W2ULBIpqJPK/3AsIxmZyh9pA==
 
-angular@^1.7.8:
+angular@*, angular@^1.7.8:
   version "1.7.8"
   resolved "https://registry.yarnpkg.com/angular/-/angular-1.7.8.tgz#b77ede272ce1b261e3be30c1451a0b346905a3c9"
   integrity sha512-wtef/y4COxM7ZVhddd7JtAAhyYObq9YXKar9tsW7558BImeVYteJiTxCKeJOL45lJ/+7B4wrAC49j8gTFYEthg==
